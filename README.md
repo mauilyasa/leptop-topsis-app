@@ -44,11 +44,11 @@ Ini adalah aplikasi web sederhana yang dibangun dengan Flask yang merekomendasik
     python app.py
     ```
 
-5. **Buka browser web Anda dan buka [http://<your-ip>:5000] atau [http://localhost:5000](http://localhost:5000) untuk mengakses aplikasi.**
+5. **Buka browser web Anda dan buka [http://{your-ip}:5000] atau [http://localhost:5000](http://localhost:5000) untuk mengakses aplikasi.**
 
 ## Preview
 
 ![image](https://github.com/mauilyasa/leptop-topsis-app/assets/133037454/1b81c0cf-9e1c-4e11-9c35-1819df897925)
-![Uploading image.png…]()
+
 
 
