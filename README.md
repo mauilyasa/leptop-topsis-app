@@ -30,13 +30,21 @@ Ini adalah aplikasi web sederhana yang dibangun dengan Flask yang merekomendasik
     pip install -r requirements.txt
     ```
 
-3. **Jalankan aplikasi Flask:**
+3. **Mempopulasikan data:**
+
+    Anda perlu mempopulasikan basis data dengan laptop-laptop sampel sebelum menjalankan aplikasi. Jalankan perintah berikut:
+
+    ```bash
+    python populate_data.py
+    ```
+
+4. **Jalankan aplikasi Flask:**
 
     ```bash
     python app.py
     ```
 
-4. **Buka browser web Anda dan buka [http://<your-ip>:5000] atau [http://localhost:5000](http://localhost:5000) untuk mengakses aplikasi.**
+5. **Buka browser web Anda dan buka [http://<your-ip>:5000] atau [http://localhost:5000](http://localhost:5000) untuk mengakses aplikasi.**
 
 ## Preview
 
