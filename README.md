@@ -49,6 +49,8 @@ Ini adalah aplikasi web sederhana yang dibangun dengan Flask yang merekomendasik
 ## Preview
 
 ![image](https://github.com/mauilyasa/leptop-topsis-app/assets/133037454/1b81c0cf-9e1c-4e11-9c35-1819df897925)
+![image](https://github.com/mauilyasa/leptop-topsis-app/assets/133037454/109e288e-6259-4709-add3-2f0db69eb6ee)
+
 
 
 
