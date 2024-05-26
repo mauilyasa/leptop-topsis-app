@@ -38,10 +38,9 @@ Ini adalah aplikasi web sederhana yang dibangun dengan Flask yang merekomendasik
 
 4. **Buka browser web Anda dan buka [http://<your-ip>:5000] atau [http://localhost:5000](http://localhost:5000) untuk mengakses aplikasi.**
 
-## Tangkapan Layar
+## Preview
 
-[Tambahkan tangkapan layar atau GIF yang menunjukkan fungsionalitas aplikasi]![image](https://github.com/mauilyasa/leptop-topsis-app/assets/133037454/1b81c0cf-9e1c-4e11-9c35-1819df897925)
+![image](https://github.com/mauilyasa/leptop-topsis-app/assets/133037454/1b81c0cf-9e1c-4e11-9c35-1819df897925)
+![Uploading image.png…]()
 
 
-
-Projek ini dilisensikan di bawah Lisensi MIT - lihat file [LICENSE](LICENSE) untuk detailnya.
