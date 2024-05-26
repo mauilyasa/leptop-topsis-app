@@ -2,13 +2,13 @@ from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 import pandas as pd
 import numpy as np
-from topsis import topsis  # Ensure this is the correct path to your topsis module
+from topsis import topsis  
 from sqlalchemy import desc
 from sklearn.preprocessing import MinMaxScaler
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///laptops.db'  # Use your database URI
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///laptops.db'  # database URI
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
@@ -19,7 +19,7 @@ class Laptop(db.Model):
     price = db.Column(db.Float)
     performance = db.Column(db.Float)
     battery_life = db.Column(db.Float)
-    # Add other columns as needed
+    # Tambahkan kriteria sesuai kebutuhan
 
 @app.route('/')
 def index():
@@ -50,7 +50,7 @@ def add_laptop():
 def recommend():
     if request.method == 'POST':
         weights = request.form.getlist('weights', type=float)
-        impacts = [1, 1, 1]  # Default impacts (1 for beneficial, -1 for non-beneficial)
+        impacts = [1, 1, 1]  # 1 = beneficial, -1 = non-beneficial/ cost
 
         laptops = Laptop.query.all()
         data = pd.DataFrame([(laptop.price, laptop.performance, laptop.battery_life) for laptop in laptops])

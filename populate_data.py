@@ -1,14 +1,13 @@
 from app import db, Laptop
-from app import app  # Assuming 'app' is your Flask application instance
+from app import app  
 
-# Create the Flask application context
 app.app_context().push()
 
-# Drop all tables and create them again (useful for resetting the database)
+# Resetting database
 db.drop_all()
 db.create_all()
 
-# Sample data with various laptop brands
+# Sample data
 laptops = [
     {"brand": "Lenovo", "model": "ThinkPad X1 Carbon", "price": 21000000, "performance": 9.5, "battery_life": 8.5},
     {"brand": "Lenovo", "model": "Yoga 920", "price": 17000000, "performance": 8.0, "battery_life": 7.5},
