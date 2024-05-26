@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Rekomendasi</h2>
+<form action="{{ url_for('recommend') }}" method="post">
+    <label for="weight_price">Bobot Untuk Harga:</label>
+    <input type="number" id="weight_price" name="weights" step="0.01" value="0.3" required><br>
+    <label for="weight_performance">Bobot Untuk Performa:</label>
+    <input type="number" id="weight_performance" name="weights" step="0.01" value="0.4" required><br>
+    <label for="weight_battery">Bobot Untuk Daya Tahan Baterai:</label>
+    <input type="number" id="weight_battery" name="weights" step="0.01" value="0.3" required><br>
+    <button type="submit">Dapatkan Rekomendasi</button>
+</form>
+<p>ps : Pastikan untuk total bobot sama dengan 1</p>
+
+{% if recommendations %}
+    <h3>Recommended Laptops:</h3>
+    <ul>
+        {% for rec in recommendations %}
+            <li>{{ rec['brand'] }} {{ rec['model'] }} - Score: {{ rec['score'] }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+{% endblock %}

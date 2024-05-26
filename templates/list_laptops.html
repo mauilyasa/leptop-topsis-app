@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Laptop List{% endblock %}
+
+{% block content %}
+<h1>List Laptops</h1>
+<table>
+    <tr>
+        <th>Brand</th>
+        <th>Model</th>
+        <th>Harga</th>
+        <th>Performa</th>
+        <th>Daya tahan baterai</th>
+    </tr>
+    {% for laptop in laptops %}
+    <tr>
+        <td>{{ laptop.brand }}</td>
+        <td>{{ laptop.model }}</td>
+        <td>Rp {{ "{:,.0f}".format(laptop.price) }}</td>
+        <td>{{ laptop.performance }}</td>
+        <td>{{ laptop.battery_life }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
+re
