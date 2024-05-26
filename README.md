@@ -20,7 +20,7 @@ Ini adalah aplikasi web sederhana yang dibangun dengan Flask yang merekomendasik
 1. **Klon repositori:**
 
     ```bash
-    git clone https://github.com/usernameanda/sistem-rekomendasi-laptop.git
+    git clone https://github.com/mauilyasa/leptop-topsis-app.git
     ```
 
 2. **Pasang dependensi:**
